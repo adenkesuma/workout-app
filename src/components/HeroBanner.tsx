@@ -1,7 +1,6 @@
 import Banner from "../assets/images/banner.png"
 import {
     Box,
-    Stack,
     Typography,
     Button
 } from "@mui/material"
