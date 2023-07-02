@@ -9,11 +9,17 @@ import {
 import { fetchData, exerciseOptions } from "../utils/fetchData"
 import HorizontalScollbar from "./HorizontalScollbar"
 
+interface Props {
+    setExercise: any;
+    bodyPart: string;
+    setBodyPart: (props: string) => void;
+}
+
 const SearchExercises = ({
     setExercise,
     bodyPart,
     setBodyPart
-}) => {
+} : Props) => {
     const [search, setSearch] = useState<string>('')
     const [bodyParts, setBodyParts] = useState([])
 
@@ -43,6 +49,8 @@ const SearchExercises = ({
                 || exercise.equipment.toLowerCase().includes(search)
                 || exercise.bodyPart.toLowerCase().includes(search)
             )
+
+            window.scrollTo({ top: 1800, left: 100, behavior: "smooth" })
 
             setSearch('')
             setExercise(searchedExercises)
@@ -78,7 +86,6 @@ const SearchExercises = ({
                         },
                         width: { lg: "1000px", xs: "350px" },
                         height: "76px",
-                        backgroundColor: "#fff",
                         borderRadius: "40px"
                     }}
                     value={search}
@@ -96,7 +103,8 @@ const SearchExercises = ({
                         width: { lg: "175px", xs: "80px" },
                         fontSize: { lg: "20px", xs: "14px" },
                         height: "56px",
-                        position: "" 
+                        position: "absolute",
+                        right: '0px'
                     }}
                 >
                     Search
