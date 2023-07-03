@@ -8,7 +8,6 @@ import {
 } from "@mui/material"
 import { fetchData, exerciseOptions } from "../utils/fetchData"
 import HorizontalScollbar from "./HorizontalScollbar"
-
 interface Props {
     setExercise: any;
     bodyPart: string;
