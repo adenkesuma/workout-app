@@ -54,7 +54,7 @@ const Exercises = ({ setExercise, exercise, bodyPart }) => {
         Showing Results
       </Typography>
       <Stack 
-        sx={{ mt: { lg: "107px", xs: "70px" } }}
+        sx={{ gap: { lg: "107px", xs: "70px" } }}
         direction="row"
         flexWrap="wrap"
         justifyContent="center"

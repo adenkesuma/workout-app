@@ -60,9 +60,11 @@ const Detail = ({ exerciseDetail }) => {
                         >
                             <img
                                 src={item.icon}
+                                alt={bodyPart}
+                                style={{ width: "50px", height: "50px" }}
                             />
                         </Button>
-                        <Typography variant="h5">
+                        <Typography variant="h5" textTransform="capitalize" >
                             {item.name}
                         </Typography>
                     </Stack>
