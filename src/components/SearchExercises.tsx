@@ -7,7 +7,8 @@ import {
     Typography
 } from "@mui/material"
 import { fetchData, exerciseOptions } from "../utils/fetchData"
-import HorizontalScollbar from "./HorizontalScollbar"
+import HorizontalScrollbar from "./HorizontalScrollbar"
+
 interface Props {
     setExercise: any;
     bodyPart: string;
@@ -62,6 +63,7 @@ const SearchExercises = ({
             mt="37px"
             justifyContent="center"
             p="20px"
+            width="100vw"
         >
             <Typography
                 fontWeight="700"
@@ -111,9 +113,9 @@ const SearchExercises = ({
             </Box>
 
             <Box
-                sx={{ position: "relative", width: "100%", p: "20px" }}
+                sx={{ position: "relative", width: "100vw", p: "20px" }}
             >
-                <HorizontalScollbar 
+                <HorizontalScrollbar 
                     data={bodyParts} 
                     bodyPart={bodyPart} 
                     setBodyPart={setBodyPart} 

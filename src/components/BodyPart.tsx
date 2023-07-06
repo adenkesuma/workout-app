@@ -1,13 +1,11 @@
-import { Stack, Typography } from "@mui/material"
+import { Button, Typography } from "@mui/material"
 import Icon from "../assets/icons/gym.png"
 
-const BodyPart = ({ item, setBodyPart, bodyPart }) => {
+const BodyPart = ({ item, setBodyPart, bodyPart }: any) => {
     console.log(bodyPart, item)
   return (
-    <Stack
+    <Button
         type="button"
-        alignItems="center"   
-        justifyContent="center"
         className="bodyPart-card"
         onClick={() => {
             setBodyPart(item)
@@ -45,7 +43,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         >
             {item}
         </Typography>
-    </Stack>
+    </Button>
   )
 }
 

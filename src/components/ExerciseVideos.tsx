@@ -19,7 +19,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
 
       {/* exercise video recommendation from yt api */}
       <Stack
-        justifyContent="flex-start"
+        justifyContent="center"
         flexWrap="wrap"
         alignItems="center"
         sx={{ flexDirection: { lg: 'row' }, gap: { lg: "110px", xs: "0" }}}

@@ -32,7 +32,7 @@ const Navbar: FC = () => {
                 Home
             </Link>
             <a 
-                href="#exercise"
+                href="#exercises"
                 style={{ textDecoration: "none", color: "#3a1212" }}
             >
                 Exercise

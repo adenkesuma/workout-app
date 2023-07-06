@@ -3,7 +3,7 @@ import { Pagination, Box, Stack, Typography } from "@mui/material"
 import ExerciseCard from "./ExerciseCard"
 import { exerciseOptions, fetchData } from "../utils/fetchData"
 
-const Exercises = ({ setExercise, exercise, bodyPart }) => {
+const Exercises = ({ setExercise, exercise, bodyPart }: any) => {
   const [currentPage, setCurrentPage] = useState<number>(1)
   const exercisePerPage = 9
 
@@ -12,7 +12,7 @@ const Exercises = ({ setExercise, exercise, bodyPart }) => {
   const indexOfFirstExercise = indexOfLastExercise - exercisePerPage
   const currentExercises = exercise.slice(indexOfFirstExercise, indexOfLastExercise)
 
-  const paginate = (e, value) => {
+  const paginate = (e: any, value: any) => {
     setCurrentPage(value)
     window.scrollTo({ top: 1800, behavior: "smooth" })
   }
@@ -42,6 +42,7 @@ const Exercises = ({ setExercise, exercise, bodyPart }) => {
 
   return (
     <Box
+      id="exercises"
       sx={{ mt: { lg: "110px" }}}
       mt="50px"
       p="20px"
@@ -59,7 +60,7 @@ const Exercises = ({ setExercise, exercise, bodyPart }) => {
         flexWrap="wrap"
         justifyContent="center"
       >
-        {currentExercises.map((exe, idx) => (
+        {currentExercises.map((exe: any, idx: number) => (
           <ExerciseCard key={idx} exercise={exe} />
         ))} 
       </Stack>
