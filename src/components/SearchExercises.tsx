@@ -21,7 +21,9 @@ const SearchExercises = ({
     setBodyPart
 } : Props) => {
     const [search, setSearch] = useState<string>('')
-    const [bodyParts, setBodyParts] = useState([])
+    const [bodyParts, setBodyParts] = useState([
+        'all', []
+    ])
 
     useEffect(() => {
         const fetchExercisesData = async () => {

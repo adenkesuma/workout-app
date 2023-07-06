@@ -57,7 +57,7 @@ const ExerciseDetail = () => {
       />
       <ExerciseVideos 
         exerciseVideos={exerciseVideos} 
-        name={exerciseDetail.name} 
+        name={exerciseDetail} 
       />
       <SimilarExercises 
         exerciseTargetMuscle={exerciseTargetMuscle} 

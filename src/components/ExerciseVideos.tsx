@@ -1,6 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material"
 
-const ExerciseVideos = ({ exerciseVideos, name }) => {
+const ExerciseVideos = ({ exerciseVideos, name }: any) => {
   if (!exerciseVideos.length) return 'Loading...'
 
   return (
@@ -13,7 +13,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         mb="33px"
       >
         Watch 
-        <span style={{ color: "#ff2625", textTransform: "capitalize" }}> {name} </span> 
+        <span style={{ color: "#ff2625", textTransform: "capitalize" }}> {name.name} </span> 
         exercise videos
       </Typography>
 
@@ -24,7 +24,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         alignItems="center"
         sx={{ flexDirection: { lg: 'row' }, gap: { lg: "110px", xs: "0" }}}
       >
-        {exerciseVideos?.slice(0, 6).map((item, idx) => (
+        {exerciseVideos?.slice(0, 6).map((item: any, idx: number) => (
           <a
             key={idx}
             className="exercise-video"

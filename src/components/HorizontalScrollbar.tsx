@@ -1,8 +1,5 @@
-import { Box, Stack, Typography } from "@mui/material"
-import { useContext } from "react";
+import { Box, Stack } from "@mui/material"
 import BodyPart from "./BodyPart"
-import LeftArrowIcon from "../assets/icons/left-arrow.png"
-import RightArrowIcon from "../assets/icons/right-arrow.png"
 import ExerciseCard from "./ExerciseCard";
 
 const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }: any) => {
