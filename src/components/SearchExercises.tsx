@@ -22,7 +22,7 @@ const SearchExercises = ({
 } : Props) => {
     const [search, setSearch] = useState<string>('')
     const [bodyParts, setBodyParts] = useState([
-        'all', []
+        "all", []
     ])
 
     useEffect(() => {
@@ -121,7 +121,6 @@ const SearchExercises = ({
                     data={bodyParts} 
                     bodyPart={bodyPart} 
                     setBodyPart={setBodyPart} 
-                    isBodyPart=""
                 />
             </Box>
         </Stack>
